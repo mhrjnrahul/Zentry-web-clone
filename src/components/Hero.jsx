@@ -75,6 +75,17 @@ function Hero() {
             sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] absolute bottom-5 right-5 z-40 text-blue-75'>
                 G<b>a</b>ming
             </h1>
+
+            <div className='absolute left-0 top-0 z-40 size-full'>
+                <div className='mt-24 px-5 sm:px-10'>
+                    <h1 className='special-font font-[zentry] uppercase text-white text-5xl 
+                        sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] absolute'>redefi<b>n</b>e</h1>
+
+                    <p className='mb-5 max-w-64 font-[robert-regular] text-white text-lg sm:text-xl'>
+                        Enter the Metagame Layer <br /> Unleash the Play Economy
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
