@@ -31,6 +31,7 @@ const Hero = () => {
   
   const handleMiniVdClick = () => {
     setHasClicked(true);
+    
 
     setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
   };
@@ -141,18 +142,18 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font font-[zentry] uppercase text-white text-5xl
-            sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] absolute bottom-5 right-5 z-40 text-blue-75">
+            sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] absolute bottom-5 right-5 z-40">
           G<b>A</b>MING
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font font-[zentry] uppercase text-white text-5xl
-            sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] text-blue-100">
+            sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem]">
               redefi<b>n</b>e
             </h1>
 
-            <p className="mb-5 max-w-64 font-[robert-regular] text-blue-100">
+            <p className="mb-5 max-w-64 font-[robert-regular] text-white">
               Enter the Metagame Layer <br /> Unleash the Play Economy
             </p>
 
