@@ -55,4 +55,9 @@ body{
     .origin-center{
         transform-origin: center;
     }
+
+    .special-font b {
+        font-family: "Zentry";
+        font-feature-settings: "ss01" on;
+      }
 }
