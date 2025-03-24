@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body{
-    font-family: 'General Sans', 'sans-serif';
+    font-family: 'General Sans', sans-serif;
     width: 100dvw;
     background-color: #dfdff0;
     overflow-x: hidden;
@@ -26,5 +26,33 @@ body{
     @font-face {
         font-family: 'robert-regular';
         src: url('fonts/robert-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: "zentry";
+        src: url("/fonts/zentry-regular.woff2") format("woff2");
+    }
+}
+
+@layer utilities {
+    .mask-clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .absolute-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .origin-center{
+        transform-origin: center;
     }
 }
