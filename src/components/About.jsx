@@ -3,28 +3,29 @@ import React from "react";
 import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/all";
+import AnimatedTitle from "./AnimatedTitle";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-    useGSAP(() =>{
-        const clipAnimation = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#clip",
-                start: "center center",
-                end: "+=800 center",
-                scrub: 0.5,
-                pin: true,
-                pinSpacing: true,
-            }
-        })
+  useGSAP(() => {
+    const clipAnimation = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#clip",
+        start: "center center",
+        end: "+=800 center",
+        scrub: 0.5,
+        pin: true,
+        pinSpacing: true,
+      },
+    });
 
-        clipAnimation.to(".mask-clip-path", {
-            width: "100vw",
-            height: "100vh",
-            borderRadius: 0,
-        })
-    }, []);
+    clipAnimation.to(".mask-clip-path", {
+      width: "100vw",
+      height: "100vh",
+      borderRadius: 0,
+    });
+  }, []);
 
   return (
     <div id="about" className="min-h-screen w-screen">
@@ -33,12 +34,7 @@ const About = () => {
           Welcome to zentry
         </h2>
 
-        <div
-          className="mt-5 text-center text-4xl uppercase leading-[0.8]
-            md:text-[6rem]"
-        >
-          Disc<b>o</b>ver the world's <br /> l<b>a</b>rgest shared adventure.
-        </div>
+        <AnimatedTitle />
 
         <div
           className="about-subtext absolute bottom-[-80dvh] left-1/2 
