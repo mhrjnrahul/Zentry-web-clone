@@ -60,6 +60,13 @@ body{
         font-family: "Zentry";
         font-feature-settings: "ss01" on;
       }
+    
+    .animated-word{
+      transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
+      transform-origin: 50% 50% -150px !important;
+      will-change: opacity, transform;
+    }
+
 
     /* From Uiverse.io by G4b413l */
 /* https://uiverse.io/G4b413l/tidy-walrus-92 */
