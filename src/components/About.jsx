@@ -24,17 +24,17 @@ const About = () => {
             height: "100vh",
             borderRadius: 0,
         })
-    })
+    }, []);
 
   return (
     <div id="about" className="min-h-screen w-screen">
-      <div className="relaticve mb-8 flex flex-col items-center gap-5">
+      <div className="relative mb-8 flex flex-col items-center gap-5">
         <h2 className="font-[general] text-sm uppercase md:text-[10px]">
           Welcome to zentry
         </h2>
 
         <div
-          className="mt-5 text-center text-4xl uppercase loading-[0.8]
+          className="mt-5 text-center text-4xl uppercase leading-[0.8]
             md:text-[6rem]"
         >
           Disc<b>o</b>ver the world's <br /> l<b>a</b>rgest shared adventure.
@@ -51,7 +51,7 @@ const About = () => {
 
       <div className="h-dvh w-screen" id="clip">
         <div
-          className="mask-clip-path about-image absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 
+          className="mask-clip-path absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 
             overflow-hidden rounded-3xl md:w-[30vw]"
         >
           <img
