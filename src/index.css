@@ -67,6 +67,34 @@ body{
       will-change: opacity, transform;
     }
 
+    .indicator-line {
+      height: 0.25rem; /* h-1 -> 4px */
+      width: 1px; /* w-px -> 1px */
+      border-radius: 9999px; /* rounded-full */
+      background-color: white; /* bg-white */
+      transition: all 200ms ease-in-out; /* transition-all duration-200 ease-in-out */
+    }
+
+    .indicator-line.active {
+      animation: indicator-line 0.5s ease infinite;
+      animation-delay: calc(var(--animation-order) * 0.1s);
+    }
+    
+    @keyframes indicator-line {
+      0% {
+        height: 4px;
+        transform: translateY(-0px);
+      }
+      50% {
+        height: 16px;
+        transform: translateY(-4px);
+      }
+      100% {
+        height: 4px;
+        transform: translateY(-0px);
+      }
+    }
+
 
     /* From Uiverse.io by G4b413l */
 /* https://uiverse.io/G4b413l/tidy-walrus-92 */
