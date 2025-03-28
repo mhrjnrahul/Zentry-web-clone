@@ -60,6 +60,12 @@ body{
         font-family: "Zentry";
         font-feature-settings: "ss01" on;
       }
+
+    .floating-nav{
+      background-color: black;
+      border-radius: 0.5rem;
+      border: 1px solid;
+    }
     
     .animated-word{
       transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
@@ -94,6 +100,7 @@ body{
         transform: translateY(-0px);
       }
     }
+    
 
 
     /* From Uiverse.io by G4b413l */
