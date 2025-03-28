@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import AnimatedTitle from './AnimatedTitle';
 import { gsap } from 'gsap';
+import RoundedCorners from './RoundedCorners';
+import Button from './Button';
 
 const Story = () => {
     const frameRef = useRef(null);
@@ -33,7 +35,8 @@ const Story = () => {
 
         gsap.to(element, {
             duration: 0.3,
-            rotateX: rotateY,
+            rotateX,
+            rotateY,
             transformPerspective: 500,
             ease: 'power1.inOut',
         })
@@ -58,7 +61,7 @@ const Story = () => {
                 <div className='story-img-content absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px]'>
                     <img 
                     ref={frameRef}
-                    onClick={handleMouseLeave}
+                    onMouseLeave={handleMouseLeave}
                     onMouseUp={handleMouseLeave}
                     onMouseEnter={handleMouseLeave}
                     onMouseMove={handleMouseMove}
@@ -67,7 +70,26 @@ const Story = () => {
                     className='object-contain'/>
                 </div>
             </div>
+
+            <RoundedCorners />
           </div>
+        </div>
+
+        <div className='-mt-80 flex w-full justify-center md:-mt-64 md:me-44
+        md:justify-end'>
+            <div className='flex h-full w-fit flex-col items-center md:items-start'>
+                <p className='mt-30 max-w-sm text-center font-[circular-web]
+                text-violet-50 md:text-start'>
+                    Where realms converge, lies Zentry and the boundless
+                    pillar. Discover its secrets and shape your fate amidst infinite
+                    opportunities.
+                </p>
+
+                <Button 
+                id="realm-button"
+                title="discover prologue"
+                containerClass="mt-5 bg-white"/>
+            </div>
         </div>
       </div>
     </section>
